@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Page Not Found | BreakThru CRM</title>
+<meta name="description" content="The client portal for BreakThru Growth clients.">
+<meta name="theme-color" content="#20324B">
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --navy: #20324B;
+    --navy-dark: #172436;
+    --logo-orange: #E6642D;
+    --btn-orange: #C4511F;
+    --btn-hover: #9E3F15;
+    --text: #1D2733;
+    --text-gray: #4A5565;
+    --text-on-navy: #C9D2DE;
+    --line: #E3E7ED;
+    --bg-gray: #F2F4F7;
+    --peach: #FDF1EB;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; }
+  body {
+    font-family: "Instrument Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--text);
+    background: #fff;
+    font-size: 18px;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  .wrap { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+  a { color: var(--btn-orange); }
+  a:hover { color: var(--btn-hover); }
+
+  /* Header */
+  header { border-bottom: 1px solid var(--line); }
+  .header-inner { padding: 22px 24px; }
+  .wordmark {
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+    color: var(--navy);
+  }
+  .wordmark .bt { color: var(--logo-orange); }
+  .wordmark:hover { color: var(--navy); }
+
+  /* Main */
+  main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 64px 0;
+    background: linear-gradient(180deg, #fff 0%, var(--bg-gray) 100%);
+  }
+  .card {
+    max-width: 680px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .eyebrow {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--btn-orange);
+    margin-bottom: 14px;
+  }
+  h1 {
+    color: var(--navy);
+    font-weight: 700;
+    font-size: clamp(34px, 6vw, 52px);
+    line-height: 1.12;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+    margin-bottom: 20px;
+  }
+  .lead {
+    color: var(--text-gray);
+    font-size: 20px;
+    text-wrap: pretty;
+    max-width: 560px;
+    margin: 0 auto 36px;
+  }
+  .btn {
+    display: inline-block;
+    background: var(--btn-orange);
+    color: #fff;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 17px;
+    padding: 16px 28px;
+    border-radius: 6px;
+    border: 0;
+    text-decoration: none;
+    transition: background 0.15s ease;
+  }
+  .btn:hover { background: var(--btn-hover); color: #fff; }
+  .btn-soon {
+    background: var(--bg-gray);
+    color: var(--text-gray);
+    border: 2px solid var(--line);
+    cursor: default;
+  }
+  .btn-soon:hover { background: var(--bg-gray); color: var(--text-gray); }
+  .secondary {
+    margin-top: 28px;
+    color: var(--text-gray);
+    font-size: 17px;
+    text-wrap: pretty;
+  }
+  .secondary a { font-weight: 600; text-decoration: none; white-space: nowrap; }
+  .secondary a:hover { text-decoration: underline; }
+
+  /* Footer */
+  footer {
+    background: var(--navy-dark);
+    color: var(--text-on-navy);
+    padding: 36px 0;
+    font-size: 15px;
+  }
+  .foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px 32px;
+  }
+  .service-of {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--text-on-navy);
+    text-decoration: none;
+  }
+  .service-of:hover { color: #fff; }
+  .service-of img { height: 40px; width: auto; display: block; }
+  .legal { display: flex; flex-wrap: wrap; gap: 8px 20px; align-items: center; }
+  .legal a { color: var(--text-on-navy); text-decoration: none; }
+  .legal a:hover { color: #fff; text-decoration: underline; }
+
+  @media (max-width: 600px) {
+    main { padding: 48px 0; }
+    .lead { font-size: 18px; }
+    .foot { flex-direction: column; align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap header-inner">
+    <a class="wordmark" href="/" aria-label="BreakThru CRM home"><span class="bt">BreakThru</span> CRM</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="card">
+      <p class="eyebrow">Page Not Found</p>
+      <h1>We can't find that page.</h1>
+      <p class="lead">The link may be old, or the address may have a typo.</p>
+      <a class="btn" href="/">Go to the Home Page</a>
+      <p class="secondary">Looking for BreakThru Growth? <a href="https://breakthrugrowth.com/" target="_blank" rel="noopener">Visit BreakThruGrowth.com</a></p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <a class="service-of" href="https://breakthrugrowth.com/" target="_blank" rel="noopener">
+      <span>A service of</span>
+      <img src="/assets/img/logo-reverse.svg" alt="BreakThru Growth">
+    </a>
+    <div class="legal">
+      <span>&copy; 2026 BreakThru LLC. All rights reserved.</span>
+      <a href="https://breakthrugrowth.com/privacy/" target="_blank" rel="noopener">Privacy</a>
+      <a href="https://breakthrugrowth.com/terms/" target="_blank" rel="noopener">Terms</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
