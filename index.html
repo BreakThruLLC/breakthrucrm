@@ -147,6 +147,8 @@
   .service-of:hover { color: #fff; }
   .service-of img { height: 40px; width: auto; display: block; }
   .legal { display: flex; flex-wrap: wrap; gap: 8px 20px; align-items: center; }
+  .nowrap { white-space: nowrap; }
+  .legal-links { display: inline-flex; gap: 20px; white-space: nowrap; }
   .legal a { color: var(--text-on-navy); text-decoration: none; }
   .legal a:hover { color: #fff; text-decoration: underline; }
 
@@ -154,6 +156,7 @@
     main { padding: 48px 0; }
     .lead { font-size: 18px; }
     .foot { flex-direction: column; align-items: flex-start; }
+    .legal { flex-direction: column; align-items: flex-start; gap: 8px; }
   }
 </style>
 </head>
@@ -187,9 +190,11 @@
       <img src="/assets/img/logo-reverse.svg" alt="BreakThru Growth">
     </a>
     <div class="legal">
-      <span>&copy; 2026 BreakThru LLC. All rights reserved.</span>
-      <a href="https://breakthrugrowth.com/privacy/" target="_blank" rel="noopener">Privacy</a>
-      <a href="https://breakthrugrowth.com/terms/" target="_blank" rel="noopener">Terms</a>
+      <span>&copy; 2026 BreakThru LLC. <span class="nowrap">All rights reserved.</span></span>
+      <span class="legal-links">
+        <a href="https://breakthrugrowth.com/privacy/" target="_blank" rel="noopener">Privacy</a>
+        <a href="https://breakthrugrowth.com/terms/" target="_blank" rel="noopener">Terms</a>
+      </span>
     </div>
   </div>
 </footer>
